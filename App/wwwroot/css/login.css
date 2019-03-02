@@ -1,0 +1,31 @@
+﻿body {
+    font-family: "Proxima Nova","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.login-header{
+    font-size:16px;
+}
+
+.login-header strong{
+    font-family:"Sans Serif";
+}
+
+
+.prohibition-message{
+    font-style: italic;
+    margin-top: 25px;
+    font-size:11px;
+}
+
+.login-wrapper {
+    padding: 30px 30px 5px 30px;
+}
+
+.login-img {
+    min-height: 88px;
+    vertical-align: middle;
+    position: relative;
+    top: 59px;
+    left: -132px;
+}

@@ -1,0 +1,485 @@
+﻿ .investigatordrp {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+.fa.fa-eye.view {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 14px;
+}
+
+a.noticelist {
+    padding-right: 28px;
+    color: #717171;
+    font-size: 14px;
+}
+
+.noticeBoard {
+    min-height: 210px;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+section.nomargin-b {
+    margin-bottom: 0;
+}
+
+#content {
+    padding-bottom: 0 !important;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.noticefooter {
+    position: absolute;
+    bottom: 0;
+    transition: all 0.1s linear;
+    color: #81ba53;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+}
+
+.readmore:hover {
+    cursor: pointer;
+    color: #669640;
+}
+
+.relative {
+    position: relative;
+}
+
+
+
+.bluebg {
+    background: #4cc0c1;
+}
+.lightbluebg {
+    background: #8cc9e0;
+}
+
+.kpibg {
+   background:#d2aa82;
+}
+.bluetbg {
+    background: #4cc0c1;
+}
+
+.yellowbg {
+    background: #f39c12
+}
+
+.redbg {
+    background: #fb6b5b;
+}
+
+.brwnbg {
+    background: #bf8040;
+}
+
+
+.darkwhitebg {
+    background: #cccccc;
+}
+
+.fouryeighthoursbg {
+  background:#717171
+}
+.darkwhtetextbg {
+    color:#ffc333;
+  
+}
+.lightpurpletextbg {
+    background: #db70b8;
+}
+
+.purplebg {
+    background: #9b59b6
+}
+.lightpinktextbg{
+    background: #ffb3cc;
+}
+
+.purpletextbg {
+    background: #9b59b6;
+}
+
+.brickbg {
+    background: #b3b3ff;
+.fa.brickbgtext {
+    color: #b3b3ff;
+    /*margin-left: 5px;*/
+    margin-left: auto;
+}
+
+.tasktextbg {
+    background: #adad85;
+}
+
+.pinthumbtextbg {
+    background: #b9de3e;
+}
+
+.onholdtextbg {
+    background: #69700b;
+}
+
+.rushtextbg {
+    background: #003324;
+}
+.duetodaytextbg {
+    background: #b0a3a3;
+}
+
+.deletedtextbg {
+    background: #283842;
+}
+.survresearchtextbg {
+    background: #721791;
+}
+.firstlooktextbg {
+    background: #38040c;
+}
+.relationtextbg {
+    background: #afa0a0;
+}
+.dollartextbg {
+    background: #fb6b5b;
+}
+.caseloadbg {
+  background:#39ac73;
+}
+.translatorbg {
+   background: #bf8040;
+}
+
+.flexholder a {
+    padding-left: 20px;
+}
+
+
+
+
+
+.b-light {
+    border-color: #e4e4e4;
+    border: 1px solid #e4e4e4;
+}
+
+.noborder-l {
+    border-left: none !important;
+}
+
+.fa.fa-plus.add {
+    cursor: pointer;
+}
+
+.flexholder.nopadding {
+    padding: 0 !important;
+}
+
+.whitebg {
+    background: #fff;
+}
+
+.mr8 {
+    margin-right: 8px;
+}
+
+.headerBg {
+    background: #ece9e9 !important;
+}
+
+.fa.plusbtn, .viewall {
+    color: #8ec165;
+}
+
+    .fa.plusbtn:hover, .viewall:hover {
+        color: #729c50;
+    }
+
+.HidingCase {
+    display: none;
+}
+
+.bgspan {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.fa.usericon {
+    font-size: 24px;
+    top: -7px;
+    position: relative;
+    left: -6px;
+}
+
+.pos-abt {
+    top: 0;
+    left: 0;
+}
+
+.calendaricon {
+    font-size: 20px;
+    top: -7px;
+    position: relative;
+    left: -5px;
+}
+
+.topbuckets {
+    display: flex;
+}
+
+    .topbuckets > div {
+        flex-grow: 1;
+    }
+
+.tabcontent > div {
+    flex-grow: 1;
+}
+
+    .tabcontent > div:first-of-type {
+        border-left: 1px solid #e4e4e4 !important;
+    }
+
+
+
+
+
+
+.legalbg {
+    background-color: #f1c40f;
+}
+
+.fa.legaltext {
+    color: #f1c40f;
+}
+
+.hourbg {
+    background-color: #2ecc71;
+}
+
+.hourtextbg {
+    background: #46cf80;
+}
+
+/*.easypiechart, .easypiechart canvas {
+    height: 2em !important;
+    width: 2em !important;
+}*/
+
+    .easypiechart, .easypiechart canvas {
+        height: 56px !important;
+        width: 55px !important;
+    }
+
+.easypiechart {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fa.calendari {
+    font-size: 24px;
+    top: 1px;
+    left: 1px;
+}
+.fa.searchi {
+    top: 2px;
+    font-size: 26px;
+    left: 0px;
+}
+.fa.useri {
+    font-size: 24px;
+    left: 1px;
+    top: 2px;
+}
+.fa.geari {
+    font-size: 25px;
+    top: 3px;
+    left: 0px;
+}
+.fa.refreshi {
+    font-size: 24px;
+    top: 2px;
+    left: 0px;
+}
+.fa.houri {
+    font-size: 23px;
+    left: 1px;
+    top: 2px
+}
+
+.f8i {
+    font-size: 23px;
+    top: 3px;
+    left: -1px;
+}
+.siui {
+    font-size: 20px;
+    left: -1px;
+    top: 3px;
+}
+.fa.legali {
+    top: 2px;
+    font-size: 26px;
+    left: -1px;
+}
+.fa.timei {
+    top: 2px;
+    left: 0px;
+    font-size: 30px;
+}
+
+.fa.briefcasei {
+    font-size: 25px;
+    left: 1px;
+    top: 4px;
+}
+.fa.hourglassi {
+    font-size: 23px;
+    top: 0px;
+    left: 0px;
+}
+.fa.warningi {
+    font-size: 24px;
+    left: 4px;
+    top: -4px;
+}
+
+.fa.pencili {
+    font-size: 26px;
+    top: 3px;
+    left: 0px;
+}
+
+.fa.pencililightblue {
+    font-size: 25px;
+    top: 0px;
+    left: 9px;
+}
+.fa.warninglighti {
+    font-size: 24px;
+    left: 0px;
+    top: 0px;
+}
+
+.fa.taski {
+    font-size: 24px;
+    left: 1px;
+    top: 3px;
+}
+.fa.pinthumbi {
+    font-size: 25px;
+    left: 0px;
+    top: 4px;
+}
+
+.fa.onholdi {
+    font-size: 21px;
+    top: 0px;
+    left: 1px;
+}
+
+.fa.rocketi {
+    font-size: 24px;
+    top: 3px;
+    left: 0px;
+}
+.fa.duetodayi {
+    font-size: 24px;
+    top: 1px;
+    left: 2px;
+}
+.fa.deletedi {
+    font-size: 24px;
+    top: 2px;
+    left: 0px;
+}
+.fa.firstlooki {
+    font-size: 26px;
+    left: 1px;
+    top: 3px;
+}
+
+.fa.relationi {
+    font-size: 24px;
+    left: 1px;
+    top: 2px;
+}
+.fa.dollari {
+    font-size: 25px;
+    left: 1px;
+    top: 2px;
+}
+.fa.usersi {
+    font-size: 24px;
+    left: 1px;
+    top: -1px;
+}
+.fa.recyclei {
+    font-size: 25px;
+    top: 5px;
+    left: 0px;
+}
+.fa.filesi {
+    font-size: 24px;
+    left: 0px;
+    top: 1px;
+}
+.fa.weeklyhoursi {
+    font-size: 23px;
+    top: 0px;
+    left: 2px;
+}
+.fa.sildersi {
+    font-size: 25px;
+    top: 2px;
+    left: 1px;
+}
+.fa.firei {
+    font-size: 25px;
+    left: 0px;
+    top: 2px;
+}
+
+.kpi {
+    font-size: 15px;
+    left: 0px;
+    top: 3px;
+}
+.fa.compassi {
+    font-size: 32px;
+    left: 0px;
+    top: 2px;
+}
+.fa-stack-2x {
+    font-size: 55px;
+    margin-left: -3px;
+    top: 1px;
+}
+
+
+.bgcircle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    display: block;
+}
+.col20 {
+    width: 20%;
+    max-width: 20%;
+    float: left;
+}
+body {
+background:red!important;
+}

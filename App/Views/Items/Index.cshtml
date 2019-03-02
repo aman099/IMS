@@ -1,0 +1,29 @@
+﻿
+@{
+    
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<div>   
+    <div class="pull-right form-group" >
+        <a asp-controller="Items" asp-action="AddEditItem" title="Add New Item" class="btn-primary"><i class="fa fa-plus"></i>New Item </a>
+        </div>
+    </div>
+<div class="top-align">
+    <div class="m-b-md heading-tp-cls" style="position:absolute;left:10px;top:0px; z-index:9">
+        <div class="title">Doctors Information</div>
+    </div>
+    @(Html.DevExtreme().DataGrid()
+                                        .ID("items_index")
+                                        .Columns(columns =>
+                                        {
+                                            columns.Add().DataField("ItemId").Caption("S NO.");
+                                            columns.Add().DataField("VendorName").Caption("Vendor");
+                                            columns.Add().DataField("ItemName").Caption("Item Name");
+                                            columns.Add().DataField("ItemType").Caption("Item Type");
+                                            columns.Add().DataField("ItemCost").Caption("Cost per Item ");
+                                        })
+                                        .DataSource(d => d.Mvc().Controller("Items").LoadAction("GetAllItems"))
+    )
+    </div>
+
