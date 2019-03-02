@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using App.Data;
 using App.Models;
 using App.Services;
+using App.Interface;
 
 namespace App
 {
@@ -38,6 +39,7 @@ namespace App
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IItemService, ItemService>();
+            services.AddTransient<IVendor, VendorService>();
 
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver());
         }
