@@ -1,0 +1,49 @@
+﻿create table vendor 
+(
+vendorId int primary key identity(1,1) not null, 
+vendorName nvarchar(200),
+vendorPhone varchar(20),
+vendorAddress varchar(50),
+vendorEmail varchar(100),
+)
+
+create table category(
+categoryId int primary key identity(1,1) not null,
+categoryName nvarchar(200),
+)
+
+create table product
+(
+productId int primary key identity(1,1) not null,
+productName nvarchar(200),
+productCode nvarchar(100),
+vendorId int foreign key(vendorId) references vendor(vendorId) ,
+categoryId int foreign key(categoryId) references category(categoryId),
+quantity int,
+price float,
+enterDate datetime,
+enterBy nvarchar(200),
+modifiedBy nvarchar(200),
+modifiedDate datetime,
+
+)
+
+create table orders
+(
+orderId int primary key identity(1,1) not null,
+productId int foreign key(productId) references product(productId), 
+memberTypeId int foreign key(memberTypeId) references membertype(memberTypeId),
+quantity int,
+price float,
+enterBy varchar(200),
+modifiedBy nvarchar(200),
+modifiedDate datetime,
+enterDate datetime
+)
+
+create table membertype
+(
+memberTypeId int primary key identity(1,1) not null,
+memberTypeCode varchar(20),
+marginPercentage float,
+)
