@@ -4,22 +4,24 @@
     Layout = "_Layout";
 }
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-<div>
+
+    <div class="row">
     <div class="pull-right form-group">
         <a asp-controller="Vendor" asp-action="AddEditVendor" title="Add New Vendor" class="btn-primary"><i class="fa fa-plus"></i>New Vendor </a>
     </div>
-
-    @(Html.DevExtreme().DataGrid()
-                                               .ID("items_index")
-                                               .Columns(columns =>
-                                               {
-                                                   columns.Add().DataField("VendorId").Caption("VendorId.").AllowSearch(true);
-                                                   columns.Add().DataField("VendorName").Caption("VendorName").AllowSearch(true);
-                                                   columns.Add().DataField("VendorEmail").Caption("VendorEmail");
-                                                   columns.Add().DataField("VendorAddress").Caption("VendorAddress");
-                                                   columns.Add().DataField("VendorPhone").Caption("VendorPhone ");
-                                               })
-                                               .DataSource(d => d.Mvc().Controller("Vendor").LoadAction("GetAllItems"))
-    )
-</div>
+        </div>
+    <div class="row">
+        @(Html.DevExtreme().DataGrid()
+                                                           .ID("items_index")
+                                                           .Columns(columns =>
+                                                           {
+                                                               columns.Add().DataField("VendorId").Caption("VendorId.").AllowSearch(true);
+                                                               columns.Add().DataField("VendorName").Caption("VendorName").AllowSearch(true);
+                                                               columns.Add().DataField("VendorEmail").Caption("VendorEmail");
+                                                               columns.Add().DataField("VendorAddress").Caption("VendorAddress");
+                                                               columns.Add().DataField("VendorPhone").Caption("VendorPhone ");
+                                                           })
+                                                           .DataSource(d => d.Mvc().Controller("Vendor").LoadAction("GetAllItems"))
+        )
+    </div>
 

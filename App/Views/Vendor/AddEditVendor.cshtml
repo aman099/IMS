@@ -7,28 +7,33 @@
 <div class="row">
     <div class="col-sm-12">
         <form asp-controller="Vendor" asp-action="AddEditVendor" class="bs-example form-horizontal label-left">
-            <div class="doc-buttons pull-right mt-8">
-                <button type="submit" class="btn btn-s-md success">Save Vendor</button>
+            
+                <div class="form-group row" style="margin-top:10px;">
+                    <div class="col-lg-3">
+                        <label>Vendor Name</label>
+                        <input asp-for="VendorName" class="form-control" placeholder="Vendor Name" type="text">
+                    </div>
+                    <div class="col-lg-3">
+                        <label >Vendor Phone</label>
+                        <input asp-for="VendorPhone" class="form-control" placeholder="Vendor Phone" type="text">
+                    </div>
+                    <div class="col-lg-3">
+                        <label >Vendor Email</label>
+                        <input asp-for="VendorEmail" class="form-control" placeholder="Vendor Email" type="text">
+                    </div>
+                    <div class="col-lg-3">
+                        <label >Vendor Address</label>
+                        <input asp-for="VendorAddress" class="form-control" placeholder="Vendor Address" type="text">
+                    </div>
+                </div>
+            
+
+            <div class="row form-group">
+                <div class="doc-buttons pull-right mt-8">
+                    <button type="submit" class="btn-s-md btn-success">Save Vendor</button>
+                    <input type="button" value="Cancel" class="btn btn-danger" onclick="javascript: document.location.href='@Url.Action("Index","Vendor")'" />
+                </div>
             </div>
-            <input type="button" value="Cancel" class="btn btn-danger" onclick="javascript: document.location.href='@Url.Action("Index","Vendor")'" />
-            <div class="form-group">
-            <div class="col-lg-3">
-                <label class="form-control">Vendor Name</label>
-                <input asp-for="VendorName" class="form-control" placeholder="First Name" type="text">
-            </div>
-            <div class="col-lg-3">
-                <label class="form-control">Vendor Phone</label>
-                <input asp-for="VendorPhone" class="form-control" placeholder="First Name" type="text">
-            </div>
-            <div class="col-lg-3">
-                <label class="form-control">Vendor Email</label>
-                <input asp-for="VendorEmail" class="form-control" placeholder="First Name" type="text">
-            </div>
-            <div class="col-lg-3">
-                <label class="form-control">Vendor Address</label>
-                <input asp-for="VendorAddress" class="form-control" placeholder="First Name" type="text">
-            </div>
-           </div>
         </form>
     </div>
 
